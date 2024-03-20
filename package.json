@@ -1,0 +1,55 @@
+{
+  "name": "pdv-restaurante",
+  "version": "1.0.1",
+  "description": "An Electron application with React",
+  "main": "./out/main/index.js",
+  "author": "Willian Deiviti Daniel",
+  "homepage": "https://electron-vite.org",
+  "permissions": [
+    "write"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@mui/base": "^5.0.0-beta.39",
+    "electron-router-dom": "^1.0.5",
+    "electron-updater": "^6.1.7",
+    "knex": "^3.1.0",
+    "react-focus-lock": "^2.11.2",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.22.2",
+    "sqlite-electron": "^3.0.5",
+    "sqlite3": "5.1.6"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.4.35",
+    "postcss-nesting": "^12.1.0",
+    "prettier": "^3.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.12"
+  }
+}
